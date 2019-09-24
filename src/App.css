@@ -2,21 +2,64 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menuBar {
+  background-color: #f3f6fa;
+  width: fit-content;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.navButton {
+  cursor: pointer;
+  margin: auto 15px;
+}
+
+.navBack {
+  width: 5px;
+  height: 5px;
+  transform: rotate(-45deg);
+  border-top: solid 2px #10847e;
+  border-left: solid 2px #10847e;
+}
+
+.navForward {
+  width: 5px;
+  height: 5px;
+  transform: rotate(45deg);
+  border-top: solid 2px #10847e;
+  border-right: solid 2px #10847e;
+}
+
+.menuItems {
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+  white-space: nowrap;
+  display: inline-block;
+  width: 500px;
+}
+
+.menuItems::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+.content {
+  display: inline-block;
+  color: #8897a2;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom-color: #f3f6fa;
+  border-bottom-style: solid;
+  border-bottom-width: medium;
+}
+
+.content:hover {
+  color: #10847e;
+  border-bottom-color: #10847e;
+  border-bottom-style: solid;
+  border-bottom-width: medium;
+  cursor: pointer;
 }
